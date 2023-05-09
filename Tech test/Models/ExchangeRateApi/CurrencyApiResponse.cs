@@ -1,17 +1,28 @@
-﻿namespace Tech_test.Models.ExchangeRateApi
+﻿using Newtonsoft.Json;
+
+namespace Tech_test.Models.ExchangeRateApi
 {
 	public class CurrencyApiResponse
 	{
-		public string result { get; set; }
-		public string documentation { get; set; }
-		public string terms_of_use { get; set; }
-		public string time_last_update_unix { get; set; }
-		public string time_last_update_utc { get; set; }
-		public string time_next_update_unix { get; set; }
-		public string time_next_update_utc { get; set; }
-		public string base_code { get; set; }
-		public ConversionRate conversion_rates { get; set; }
-
-		public string error_type { get; set; }
+		[JsonProperty("result")]
+		public string Result { get; set; }
+		[JsonProperty("documentation")]
+		public string Documentation { get; set; }
+		[JsonProperty("terms_of_use")]
+		public string TermsOfUse { get; set; }
+		[JsonProperty("time_last_update_unix")]
+		public string TimeLastUpdateUnix { get; set; }
+		[JsonProperty("time_last_update_utc")]
+		public string TimeLastUpdateUtc { get; set; }
+		[JsonProperty("time_next_update_unix")]
+		public string TimeNextUpdateUnix { get; set; }
+		[JsonProperty("time_next_update_utc")]
+		public string TimeNextUpdateUtc { get; set; }
+		[JsonProperty("base_code")]
+		public string BaseCode { get; set; }
+		[JsonProperty("conversion_rates")]
+		public ConversionRate ConversionRates { get; set; }
+		[JsonProperty("error-type")]
+		public string ErrorType { get; set; }
 	}
 }

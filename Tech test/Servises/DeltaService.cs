@@ -1,4 +1,5 @@
-﻿using Tech_test.Interfaces;
+﻿using System.Reflection;
+using Tech_test.Interfaces;
 using Tech_test.Models;
 using Tech_test.Models.ExchangeRateApi;
 
@@ -10,15 +11,15 @@ namespace Tech_test.Servises
 		{
 			try
 			{
-				List<Delta> response = new List<Delta>();
+				var response = new List<Delta>();
 				foreach (string cur in request.Currencies)
 				{
-					var prop = request.FromValue.conversion_rates.GetType().GetProperty(cur);
-					var from = Convert.ToDouble(prop.GetValue(request.FromValue.conversion_rates, null));
-					var to = Convert.ToDouble(prop.GetValue(request.ToValue.conversion_rates, null));
+					PropertyInfo prop = request.FromValue.ConversionRates.GetType().GetProperty(cur);
+					var from = Convert.ToDouble(prop.GetValue(request.FromValue.ConversionRates));
+					var to = Convert.ToDouble(prop.GetValue(request.ToValue.ConversionRates));
 
 					double delta = Math.Round(from - to, 3);
-					Delta res = new Delta()
+					var res = new Delta()
 					{
 						Currency = cur,
 						Value = delta

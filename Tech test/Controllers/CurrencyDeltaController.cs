@@ -52,20 +52,20 @@ namespace Tech_test.Controllers
 					//get history values from rates api
 					CalculateDeltaRequest calculateDeltaRequest = await _ratesService.GetHistoryValue(request);
 
-					if (calculateDeltaRequest.FromValue.result == "error")
+					if (calculateDeltaRequest.FromValue.Result == "error")
 					{
 						return BadRequest(new ErrorDescription()
 								{
 									ErrorCode = "rate-api-error",
-									ErrorDetails = calculateDeltaRequest.FromValue.error_type
+									ErrorDetails = calculateDeltaRequest.FromValue.ErrorType
 								});
 					}
-					else if (calculateDeltaRequest.ToValue.result == "error")
+					else if (calculateDeltaRequest.ToValue.Result == "error")
 					{
 						return BadRequest(new ErrorDescription()
 						{
 							ErrorCode = "rate-api-error",
-							ErrorDetails = calculateDeltaRequest.ToValue.error_type
+							ErrorDetails = calculateDeltaRequest.ToValue.ErrorType
 						});
 					}
 

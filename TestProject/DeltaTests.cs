@@ -17,14 +17,14 @@ namespace TestProject
 				Currencies = new List<string>(){ "USD" },
 				FromValue = new CurrencyApiResponse()
 				{
-					conversion_rates = new ConversionRate()
+					ConversionRates = new ConversionRate()
 					{
 						USD = 25.5
 					}
 				},
 				ToValue = new CurrencyApiResponse()
 				{
-					conversion_rates = new ConversionRate()
+					ConversionRates = new ConversionRate()
 					{
 						USD = 26
 					}
@@ -46,7 +46,7 @@ namespace TestProject
 				Currencies = new List<string>() { "USD" , "EUR"},
 				FromValue = new CurrencyApiResponse()
 				{
-					conversion_rates = new ConversionRate()
+					ConversionRates = new ConversionRate()
 					{
 						USD = 25.5,
 						EUR = 26
@@ -54,7 +54,7 @@ namespace TestProject
 				},
 				ToValue = new CurrencyApiResponse()
 				{
-					conversion_rates = new ConversionRate()
+					ConversionRates = new ConversionRate()
 					{
 						USD = 26,
 						EUR = 26.7
@@ -77,7 +77,7 @@ namespace TestProject
 				Currencies = new List<string>() {},
 				FromValue = new CurrencyApiResponse()
 				{
-					conversion_rates = new ConversionRate()
+					ConversionRates = new ConversionRate()
 					{
 						USD = 25.5,
 						EUR = 26
@@ -85,7 +85,7 @@ namespace TestProject
 				},
 				ToValue = new CurrencyApiResponse()
 				{
-					conversion_rates = new ConversionRate()
+					ConversionRates = new ConversionRate()
 					{
 						USD = 26,
 						EUR = 26.7

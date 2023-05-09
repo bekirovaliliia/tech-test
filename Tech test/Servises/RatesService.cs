@@ -13,7 +13,7 @@ namespace Tech_test.Servises
         public async Task<CalculateDeltaRequest> GetHistoryValue(CurrencyDeltaRequest request)
         {
             try {
-				CalculateDeltaRequest calculateDeltaRequest = new CalculateDeltaRequest();
+				var calculateDeltaRequest = new CalculateDeltaRequest();
 				calculateDeltaRequest.FromValue = await ImportFromApi(request.FromDate, request.Baseline);
 				calculateDeltaRequest.ToValue = await ImportFromApi(request.ToDate, request.Baseline);
 
@@ -23,7 +23,7 @@ namespace Tech_test.Servises
                 return new CalculateDeltaRequest();
             }
         }
-		public async Task<CurrencyApiResponse> ImportFromApi(DateTime date, string baseCurrency)
+		private async Task<CurrencyApiResponse> ImportFromApi(DateTime date, string baseCurrency)
         {
             try
             {
@@ -32,11 +32,7 @@ namespace Tech_test.Servises
                     var httpResponse = await webClient.GetAsync(URLString);
                     var json = await httpResponse.Content.ReadAsStringAsync();
 					CurrencyApiResponse currencyResponse = JsonConvert.DeserializeObject<CurrencyApiResponse>(json);
-                    if (!httpResponse.IsSuccessStatusCode)
-                    {
-                        //using this because api returns error-type with '-', which is invalid in c# naming 
-					    currencyResponse.error_type = JsonConvert.DeserializeObject<JObject>(json).SelectToken("error-type").Value<string>();
-				    }
+
 				return currencyResponse;
             }
             catch
