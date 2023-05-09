@@ -1,0 +1,34 @@
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\appsettings.json
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Tech test.exe
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Tech test.deps.json
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Tech test.runtimeconfig.json
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Tech test.dll
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Tech test.pdb
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.AssemblyInfo.cs
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\staticwebassets\msbuild.Tech test.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\staticwebassets\msbuild.build.Tech test.props
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Tech test.props
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Tech test.props
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\scopedcss\bundle\Tech test.styles.css
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.csproj.CopyComplete
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.dll
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\refint\Tech test.dll
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.pdb
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\Tech test.genruntimeconfig.cache
+C:\Users\User\source\repos\Tech test\Tech test\obj\Debug\net7.0\ref\Tech test.dll
+C:\Users\User\source\repos\Tech test\Tech test\bin\Debug\net7.0\Newtonsoft.Json.dll
