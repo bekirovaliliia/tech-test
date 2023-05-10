@@ -17,7 +17,7 @@ namespace Tech_test.Servises
 					PropertyInfo prop = request.FromValue.ConversionRates.GetType().GetProperty(cur);
 					var from = Convert.ToDouble(prop.GetValue(request.FromValue.ConversionRates));
 					var to = Convert.ToDouble(prop.GetValue(request.ToValue.ConversionRates));
-
+					
 					double delta = Math.Round(from - to, 3);
 					var res = new Delta()
 					{
@@ -29,9 +29,9 @@ namespace Tech_test.Servises
 
 				return response;
 			}
-			catch
+			catch (Exception ex)
 			{
-				return new List<Delta>();
+				throw new Exception("Delta calculation error:" + ex.Message);
 			}
 		}
 	}

@@ -19,9 +19,10 @@ namespace Tech_test.Servises
 
                 return calculateDeltaRequest;
 			}
-			catch {
-                return new CalculateDeltaRequest();
-            }
+			catch (Exception ex)
+            {
+				throw new Exception("Get history error:" + ex.Message);
+			}
         }
 		private async Task<CurrencyApiResponse> ImportFromApi(DateTime date, string baseCurrency)
         {
@@ -35,10 +36,10 @@ namespace Tech_test.Servises
 
 				return currencyResponse;
             }
-            catch
-            {
-                return new CurrencyApiResponse();
-            }
+            catch (Exception ex)
+			{
+				throw new Exception("Import from API error:" + ex.Message);
+			}
         }
     }
 }

@@ -10,23 +10,30 @@ namespace Tech_test.Servises
 	{
 		public List<ErrorDescription> Validate(CurrencyDeltaRequest request)
 		{
-			List<ErrorDescription> errors = new List<ErrorDescription>();
-
-			ErrorDescription currenciesValidationResult = ValidateCurrencies(request);
-
-			if (currenciesValidationResult != null)
+			try
 			{
-				errors.Add(currenciesValidationResult);
+				List<ErrorDescription> errors = new List<ErrorDescription>();
+
+				ErrorDescription currenciesValidationResult = ValidateCurrencies(request);
+
+				if (currenciesValidationResult != null)
+				{
+					errors.Add(currenciesValidationResult);
+				}
+
+				ErrorDescription datesValidationResult = ValidateDates(request);
+
+				if (datesValidationResult != null)
+				{
+					errors.Add(datesValidationResult);
+				}
+
+				return errors;
 			}
-
-			ErrorDescription datesValidationResult = ValidateDates(request);
-
-			if(datesValidationResult != null) 
+			catch(Exception ex)
 			{
-				errors.Add(datesValidationResult);
+				throw new Exception("Validation error: "+ex.Message);
 			}
-
-		    return errors;
 		}
 
 		public ErrorDescription ValidateCurrencies(CurrencyDeltaRequest request)
